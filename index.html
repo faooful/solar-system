@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content=" ***Website Description Here*** "/>
+
+<meta name="author" content="Joseph Williams"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+<title>Solar System | Pure CSS Solar System</title>
+
+<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen" />
+
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+
+<div class="sun"></div>
+
+<div id="mercury-orbit">
+    <div class="mercury"></div>
+</div>
+
+<div id="venus-orbit">
+    <div class="venus"></div>
+</div>
+
+<div id="earth-orbit">
+    <div class="earth"></div>
+</div>
+
+<div id="mars-orbit">
+    <div class="mars"></div>
+</div>
+
+<div id="jupiter-orbit">
+    <div class="jupiter"></div>
+</div>
+
+<div id="saturn-orbit">
+    <div class="saturn"></div>
+</div>
+
+<div id="uranus-orbit">
+    <div class="uranus"></div>
+</div>
+
+<div id="neptune-orbit">
+    <div class="neptune"></div>
+</div>
+
+<div id="pluto-orbit">
+    <div class="pluto"></div>
+</div>
+
+
+</body>
+
+<script src="js/jquery-1.9.1.min.js" charset="utf-8"></script>
+
+<!-- Lazy Load -->
+<script src="js/jquery.lazyload.js" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+    $(function() {          
+        $("img.lazy").show().lazyload({
+            effect      : "fadeIn",
+            failurelimit : 0
+        });
+  	});
+</script>
+<!-- Lazy Load End -->
+
+</html>
